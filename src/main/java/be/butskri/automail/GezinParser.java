@@ -13,6 +13,7 @@ public class GezinParser {
 
 	private Iterator<String> linesIterator;
 
+	@SuppressWarnings("unchecked")
 	public GezinParser(File file) {
 		try {
 			this.linesIterator = FileUtils.readLines(file, "UTF-8").iterator();
